@@ -1,0 +1,168 @@
+/* General Reset */
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+  color: white;
+  background: linear-gradient(135deg, #1a0033, #330066, #6600cc);
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: url('images/lipstick-bg.jpg') no-repeat center center/cover;
+  position: relative;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 4em; /* make it big */
+  font-family: 'Pacifico', cursive; /* cursive font */
+  text-transform: none; /* keep natural cursive look */
+  color: #fff;
+  text-shadow: 0 0 10px #ff66cc,
+               0 0 20px #ff3399,
+               0 0 30px #6600cc; /* glowing effect */
+}
+.hero p {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+.cta-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #ff66cc;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  box-shadow: 0 0 15px #ff66cc;
+  transition: 0.3s;
+}
+
+.cta-btn:hover {
+  background: #ff3399;
+  box-shadow: 0 0 25px #ff3399;
+}
+
+/* Twinkling Stars Overlay */
+@keyframes twinkle {
+  0% { opacity: 0.8; }
+  50% { opacity: 0.3; }
+  100% { opacity: 0.8; }
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: url('images/star-overlay.png') repeat;
+  animation: twinkle 3s infinite;
+  opacity: 0.5;
+}
+
+/* Features Section */
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 20px;
+  background: rgba(0,0,0,0.6);
+}
+
+.feature {
+  width: 30%;
+  text-align: center;
+}
+
+.feature h2 {
+  color: #ff66cc;
+}
+
+/* Signup Section */
+.signup {
+  text-align: center;
+  padding: 50px 20px;
+  background: #330066;
+}
+
+.signup form {
+  display: inline-block;
+}
+
+.signup input {
+  padding: 10px;
+  margin: 5px;
+  width: 200px;
+  border: none;
+  border-radius: 5px;
+}
+
+.signup button {
+  padding: 10px 20px;
+  background: #ff66cc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #ff66cc;
+}
+
+.signup button:hover {
+  background: #ff3399;
+  box-shadow: 0 0 20px #ff3399;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  /* Features stack vertically */
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+  .feature {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  /* Hero section scales down */
+  .hero {
+    padding: 60px 20px;
+  }
+  .hero h1 {
+    font-size: 2em;
+  }
+  .hero p {
+    font-size: 1em;
+  }
+  .cta-btn {
+    padding: 10px 20px;
+    font-size: 1em;
+  }
+
+  /* Signup form full width */
+  .signup form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .signup input {
+    width: 90%;
+    max-width: 400px;
+    margin: 10px 0;
+  }
+  .signup button {
+    width: 90%;
+    max-width: 200px;
+    margin-top: 15px;
+  }
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #1a0033;
+  color: #ccc;
+  font-size: 0.9em;
+}
