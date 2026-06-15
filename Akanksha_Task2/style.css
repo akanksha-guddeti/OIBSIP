@@ -1,0 +1,122 @@
+/* General Reset */
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: #fff; /* plain white background */
+  color: #333;
+  min-height: 100vh;
+}
+
+
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: #333;
+  color: white;
+}
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;   /* makes it a circle */
+  border: 4px solid white;
+  margin-bottom: 20px;
+  box-shadow: 0 0 15px #ff66cc;
+}
+
+.hero h1 {
+  font-size: 3em;
+  font-family: 'sans-serif';
+  text-shadow: 0 0 10px #ff66cc, 0 0 20px #ff3399;
+}
+
+.hero p {
+  font-size: 1.2em;
+}
+
+/* Section Styling */
+section {
+  padding: 50px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Different background colors for each section */
+.about { background: #f5f5f5; }
+.skills { background: #ffe6f0; }
+.projects { background: #e6f0ff; }
+.contact { background: #e6ffe6; }
+
+/* Skills */
+.skills ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skills li {
+  background: #ff66cc;
+  color: white;
+  margin: 10px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+/* Projects */
+.projects .project {
+  text-align: center;
+  margin: 20px;
+}
+
+.projects a {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #6600cc;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.projects a:hover {
+  background: #ff66cc;
+  box-shadow: 0 0 10px #ff66cc;
+}
+
+/* Contact Links */
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.contact-links a {
+  display: inline-block;
+  padding: 15px 30px;
+  background: #333;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.contact-links a:hover {
+  background: #ff3399;
+  box-shadow: 0 0 15px #ff3399;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+  color: #ccc;
+  font-size: 0.9em;
+}
