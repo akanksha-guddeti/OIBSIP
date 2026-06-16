@@ -21,6 +21,11 @@ Technologies Used
 - HTML5
 - CSS3
 - JavaScript
+## Live Demo Links
+
+* [Task 1 - Landing Page](https://akanksha-guddeti.github.io/OIBSIP/Akanksha_Task1/)
+* [Task 2 - Portfolio Website](https://akanksha-guddeti.github.io/OIBSIP/Akanksha_Task2/)
+* [Task 3 - Temperature Converter](https://akanksha-guddeti.github.io/OIBSIP/Akanksha_Task3/)
 
 Author
 
